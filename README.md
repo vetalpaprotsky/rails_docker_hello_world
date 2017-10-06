@@ -1,24 +1,24 @@
-# README
+# Rails Docker Hello World
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Follow these instructions in order to setup the project.
 
-Things you may want to cover:
+1. Install Docker
+```
+https://www.docker.com/get-docker
+```
 
-* Ruby version
+2. Install Docker Compose
+```
+https://docs.docker.com/compose/install
+```
 
-* System dependencies
+3. Build images
+```
+sudo docker-compose build
+```
 
-* Configuration
+4. Run containers
+```
+sudo docker-compose up
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
