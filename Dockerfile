@@ -11,16 +11,21 @@ RUN mkdir -p $RAILS_ROOT
 # Set working directory, where the commands will be ran:
 WORKDIR $RAILS_ROOT
 
-# Gems:
-COPY Gemfile Gemfile
-COPY Gemfile.lock Gemfile.lock
-RUN gem install bundler
-RUN bundle install
-
-COPY config/puma.rb config/puma.rb
-
 # Copy the main application.
 COPY . .
+
+# Setup rails environment.
+ENV RAILS_ENV production
+
+# Secret key base should not be set like that. It just for testing.
+ENV SECRET_KEY_BASE b73cf36f30aab3b755bb0006a29d02dae74ab0dbb6d53da968e56100a5d8f0a25b2152af98eaafac72e03b5903a5b7ad30d0792e167d0b438cad9972187e840a
+
+# Install gems.
+RUN gem install bundler
+RUN bundle install --without development test
+
+# Precompile assets.
+RUN rake assets:precompile
 
 EXPOSE 3000
 
