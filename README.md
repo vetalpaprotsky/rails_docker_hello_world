@@ -22,3 +22,13 @@ sudo docker-compose build
 sudo docker-compose up
 ```
 
+5. Open the app container
+```
+docker exec -it railsdockerhelloworld_app_1 /bin/bash
+```
+
+6. Create the database and run migrations
+```
+rake db:create
+rake db:migrate
+```
