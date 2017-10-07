@@ -15,10 +15,11 @@ gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
-# gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# TODO: Nginx does not see assets. Could it be because of this gem?
 # Temporary fix for uglifier gem
 gem 'therubyracer', git: 'https://github.com/cowboyd/therubyracer.git'
 
