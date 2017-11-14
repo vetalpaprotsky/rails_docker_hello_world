@@ -1,6 +1,7 @@
 # Rails Docker Hello World
 
-Followed by http://codepany.com/blog/rails-5-and-docker-puma-nginx/ (4. Dockerize Rails app and Nginx – separate containers)
+Followed by http://codepany.com/blog/rails-5-and-docker-puma-nginx/ 
+(4. Dockerize Rails app and Nginx – separate containers)
 
 Follow these instructions in order to setup the project.
 
