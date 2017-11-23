@@ -24,9 +24,6 @@ ENV SECRET_KEY_BASE b73cf36f30aab3b755bb0006a29d02dae74ab0dbb6d53da968e56100a5d8
 RUN gem install bundler
 RUN bundle install --without development test
 
-# Precompile assets.
-RUN rake assets:precompile
-
 EXPOSE 3000
 
 # The default command that gets ran will be to start the Puma server.
