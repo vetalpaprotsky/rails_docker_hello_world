@@ -7,7 +7,8 @@ Followed by http://codepany.com/blog/rails-5-and-docker-puma-nginx/
 --------------------------------------------------------------------------------
 
 Follow these steps in order to setup the project on your machine without Nginx.
-(Environment == development)
+
+environment == development
 
 1. Install ruby 2.4.1 (use RVM or rbenv)
 
@@ -37,7 +38,8 @@ bundle exec rails s
 --------------------------------------------------------------------------------
 
 Follow these instructions in order to setup the project with Nginx using Docker.
-(Environment == production)
+
+environment == production
 
 1. Install Docker
 
@@ -50,11 +52,12 @@ Follow these instructions in order to setup the project with Nginx using Docker.
 
 
 3. Precompile assets
-(Need to come up with a better solution. It should not be here.
+
+Need to come up with a better solution. It should not be here.
 This is a bad approach, because, you'd need to setup
 the project on your machine in order to precompile assets.
 When you create the Nginx image, you copy assets from the project to the image,
-that's why you need assets to be in the project)
+that's why you need assets to be in the project.
 ```
 bundle exec rake assets:precompile RAILS_ENV=production
 ```
