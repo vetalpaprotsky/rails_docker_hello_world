@@ -7,7 +7,7 @@ Followed by http://codepany.com/blog/rails-5-and-docker-puma-nginx/
 --------------------------------------------------------------------------------
 
 Follow these steps in order to setup the project on your machine without Nginx.
-ENV == development
+ENV == development.
 
 1. Install ruby 2.4.1 (use RVM or rbenv)
 
@@ -37,7 +37,7 @@ bundle exec rails s
 --------------------------------------------------------------------------------
 
 Follow these instructions in order to setup the project with Nginx using Docker.
-ENV == production
+ENV == production.
 
 1. Install Docker
 
